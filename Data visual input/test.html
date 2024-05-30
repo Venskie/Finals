@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@8.3.2/dist/handsontable.full.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">Performance Dashboard</div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Library</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+            </header>
+            <section class="content">
+                <div class="upload-section">
+                    <input type="file" id="fileInput" accept=".xlsx">
+                </div>
+                
+                <div id="spreadsheet"></div>
+                
+                <button id="generateReport">Generate Report</button>
+                <div id="charts">
+                    <div id="barChart"></div>
+                    <div id="pieChart"></div>
+                    <div id="lineChart"></div>
+                    <div id="scatterPlot"></div>
+                    <div id="histogram"></div>
+                    <div id="areaChart"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@8.3.2/dist/handsontable.full.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

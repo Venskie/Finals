@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2a2b4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar nav ul li.active a {
+    background-color: #1e87f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+#spreadsheet {
+    width: 100%;
+    margin-bottom: 20px;
+ 
+        height: 500px; /* Set the desired height here */
+
+}
+
+#charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#charts > div {
+    width: 45%;
+    margin-bottom: 20px;
+}
+/* New CSS for the file info placeholder */
+.file-info-placeholder {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.ht_clone_top {
+    display: none;
+}
+.ht_clone_bottm {
+    display: none;
+}
+.ht_clone_left-top {
+    display: none;
+}
+.ht_clone_left {
+    display: none;
+}
